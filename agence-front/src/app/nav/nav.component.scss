@@ -1,0 +1,58 @@
+ul {
+  padding: 0;
+  display: inline-flex;
+}
+
+.menu {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.title {
+  max-width: 400px;
+}
+
+
+li {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+li:hover {
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 800;
+  color: black;
+  overflow: hidden;
+  background: linear-gradient(to right, green 5%, yellow 50%, black 30%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 1s ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+  &:hover {
+    background-position: 0 100%;
+  }
+}
+
+p {
+  margin-top: 5px;
+  font-size: small;
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+
+app-sidenav,
+app-presentation,
+app-contact,
+app-realisation,
+app-savoir-faire {
+  font-family: 'Epilogue';
+}
+
+//h3 {
+//  text-align: center;
+//}
+
+
+#nav a {
+  text-decoration: none;
+  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+}
+
+#nav a:hover {
+  background-size: 100% 100%;
+}

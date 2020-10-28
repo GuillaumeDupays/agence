@@ -1,0 +1,39 @@
+form {
+  max-width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  //border: 2px solid crimson;
+}
+
+.mini-block {
+  margin: auto;
+  padding-bottom: 15px;
+  //border: 2px solid midnightblue;
+  display: inline-flex;
+  width: 350px
+}
+
+.mini-bloc {
+
+  width: 100%;
+  margin: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+label {
+  width: 150px;
+  padding: 8px;
+  //border: 2px solid orange;
+}
+
+input, select, textarea {
+  padding: 10px;
+  background-color: ghostwhite;
+  border: none;
+  margin: auto;
+  width: 100%;
+}

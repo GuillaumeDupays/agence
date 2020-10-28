@@ -1,0 +1,39 @@
+<form [formGroup]="form" (ngSubmit)="postMsg()">
+  <div class="mini-block">
+    <label>Nom</label>
+      <input type="text" formControlName="nom">
+  </div>
+  <div class="mini-block">
+    <label>Prénom</label>
+      <input type="text" formControlName="prenom">
+  </div>
+  <div class="mini-block">
+    <label>Société</label>
+      <input type="text" formControlName="societe">
+  </div>
+  <div class="mini-block">
+    <label>Téléphone</label>
+      <input type="number" formControlName="telephone">
+  </div>
+  <div class="mini-block">
+    <label>Mail</label>
+      <input type="email" formControlName="mail">
+  </div>
+  <div class="mini-block">
+    <label>Objet</label>
+      <select formControlName="objet">
+        <option>Choix</option>
+        <option>J'AI UN PROJET</option>
+        <option>JE CHERCHE UN JOB</option>
+        <option>JE VEUX VOUS RENCONTRER</option>
+      </select>
+  </div>
+  <div class="mini-bloc">
+    <label>Message</label>
+    <textarea type="text" formControlName="message"></textarea>
+  </div>
+  <div class="mini-block">
+    <button type="submit">ENVOYER</button>
+  </div>
+</form>
+

@@ -1,0 +1,11 @@
+
+<div id="nav" class="sidenav" (click)="closeNav()">
+  <a routerLink="/bio">Bio</a>
+  <a routerLink="/savoir-faire">Savoir-faire</a>
+  <a routerLink="/contact">Contact</a>
+</div>
+
+<div id="main">
+  <app-nav (click)="openNav()"></app-nav>
+  <router-outlet></router-outlet>
+</div>
