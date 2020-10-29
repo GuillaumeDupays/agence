@@ -1,7 +1,7 @@
 <form [formGroup]="form" (ngSubmit)="postMsg()">
   <div class="mini-block">
     <label>Nom</label>
-      <input type="text" formControlName="nom">
+      <input type="text" formControlName="nom" required="required">
   </div>
   <div class="mini-block">
     <label>Prénom</label>
@@ -17,7 +17,7 @@
   </div>
   <div class="mini-block">
     <label>Mail</label>
-      <input type="email" formControlName="mail">
+      <input type="email" formControlName="mail" required="required">
   </div>
   <div class="mini-block">
     <label>Objet</label>
@@ -30,7 +30,7 @@
   </div>
   <div class="mini-bloc">
     <label>Message</label>
-    <textarea type="text" formControlName="message"></textarea>
+    <textarea type="text" formControlName="message" required="required"></textarea>
   </div>
   <div class="mini-block">
     <button type="submit">ENVOYER</button>

@@ -9,6 +9,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
   form: FormGroup;
+
   constructor( private contactService: ContactService, private fb: FormBuilder ) { }
 
   ngOnInit(): void {
@@ -32,6 +33,9 @@ export class ContactComponent implements OnInit {
       this.contactService
         .postMessageContact(this.form.value)
         .subscribe((data) => console.log('message', data));
+    }
+    else {
+      alert('Un ou plusieurs champs sont incomplets');
     }
   }
 
