@@ -1,34 +1,24 @@
+
+
 <div class="container">
   <div class="mini-block" id="m-b-framework">
     <h3>Frameworks</h3>
-    <p>Angular</p>
-    <p>Vue.js <- acquisition en cours</p>
-    <p>React.js <- pour 2021</p>
-    <p>Node.js</p>
-    <p>Strapi</p>
+    <p *ngFor="let framework of frameworks">{{framework}}</p>
   </div>
   <div class="mini-block" id="m-b-langage">
     <h3>Langages</h3>
-    <p>Javascript/Typescript</p>
-    <p>Java <- en cours d'acquisition</p>
-    <p>Html/Css</p>
+    <p *ngFor="let langage of langages">{{langage}}</p>
   </div>
   <div class="mini-block" id="m-b-competence">
     <h3>Compétences</h3>
-    <p>Concevoir et développer une application, un site web</p>
-    <p>Intégrer une maquette graphique</p>
-    <p>Réaliser l'ensemble de la partie graphique d'une interface web et mobile</p>
+    <p *ngFor="let competence of competences">{{competence}}</p>
   </div>
   <div class="mini-block" id="m-b-qualite">
     <h3>Qualités</h3>
-    <p>Curiosité</p>
-    <p>Créativité</p>
-    <p>Précision</p>
+    <p *ngFor="let qualite of qualites">{{qualite}}</p>
   </div>
   <div class="mini-block" id="m-b-savoir">
     <h3>Savoir-être</h3>
-    <p>Sens du service</p>
-    <p>Ecoute active</p>
-    <p>Pédagogie</p>
+    <p *ngFor="let savoirE of savoirEtre">{{savoirE}}</p>
   </div>
 </div>
