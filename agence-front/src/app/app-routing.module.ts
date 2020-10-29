@@ -4,6 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {SavoirFaireComponent} from './savoir-faire/savoir-faire.component';
 import {ContactComponent} from './contact/contact.component';
 import {BioComponent} from './bio/bio.component';
+import {PixelComponent} from './pixel/pixel.component';
 
 const route: Routes = [
   { path: '', component: BioComponent },

@@ -14,6 +14,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { BioComponent } from './bio/bio.component';
 import { AdminComponent } from './admin/admin.component';
+import { PixelComponent } from './pixel/pixel.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AdminComponent } from './admin/admin.component';
     SidenavComponent,
     BurgerComponent,
     BioComponent,
-    AdminComponent
+    AdminComponent,
+    PixelComponent
   ],
     imports: [
         BrowserModule,

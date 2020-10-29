@@ -14,8 +14,8 @@ export class SidenavComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
  openNav() {
-    document.getElementById('nav').style.width = '250px';
-    document.getElementById('main').style.marginLeft = '250px';
+    document.getElementById('nav').style.width = '180px';
+    document.getElementById('main').style.marginLeft = '180px';
   }
 
   // tslint:disable-next-line:typedef
