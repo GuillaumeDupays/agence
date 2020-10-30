@@ -12,6 +12,6 @@ export class ContactService {
   constructor(private http: HttpClient) { }
 
   postMessageContact(msgContact: string) {
-    return this.http.post<MessageContact>(`${this.url}/msg-contacts`, msgContact);
+    return this.http.post<MessageContact>('http://admin.blob-zone.com/api/v1', msgContact);
   }
 }
