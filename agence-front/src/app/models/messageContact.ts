@@ -1,4 +1,5 @@
 export interface MessageContact {
+  _id?: string;
   nom: string;
   prenom: string;
   societe: string;

@@ -1,0 +1,27 @@
+
+
+
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Société</th>
+      <th>Téléphone</th>
+      <th>Mail</th>
+      <th>Objet</th>
+      <th>Message</th>
+    </tr>
+    <tr *ngFor="let msg of messages" >
+      <td>{{msg._id}}</td>
+      <td>{{msg.nom}}</td>
+      <td>{{msg.prenom}}</td>
+      <td>{{msg.societe}}</td>
+      <td>{{msg.telephone}}</td>
+      <td>{{msg.mail}}</td>
+      <td>{{msg.objet}}</td>
+      <td>{{msg.message}}</td>
+      <td><button (click)="deleteMsg(msg._id)">Supprimer</button></td>
+    </tr>
+  </table>
+
