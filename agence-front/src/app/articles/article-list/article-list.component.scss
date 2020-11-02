@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: 0 auto;
+  //border: 2px solid crimson;
+}
+
+.mini-block {
+  display: inline-block;
+  margin: 15px;
+  padding: 5px;
+  background-color: goldenrod;
+  //border: 2px solid green;
+}
+
