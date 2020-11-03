@@ -13,8 +13,7 @@ const route: Routes = [
   { path: 'bio', component: BioComponent },
   { path: 'savoir-faire', component: SavoirFaireComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'adminBlob', component: AdminComponent },
-  { path: 'adminArticles', component: AdminArticlesComponent },
+  { path: 'admin', component: AdminArticlesComponent },
   {
     path: 'articles',
     loadChildren: () => import('./articles/articles.module').then(m => m.ArticlesModule)

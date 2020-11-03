@@ -17,18 +17,18 @@ import { AdminComponent } from './admin/admin.component';
 import { PixelComponent } from './pixel/pixel.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavComponent,
-    SavoirFaireComponent,
-    ContactComponent,
-    RencontreComponent,
-    SidenavComponent,
-    BurgerComponent,
-    BioComponent,
-    AdminComponent,
-    PixelComponent
-  ],
+    declarations: [
+        AppComponent,
+        NavComponent,
+        SavoirFaireComponent,
+        ContactComponent,
+        RencontreComponent,
+        SidenavComponent,
+        BurgerComponent,
+        BioComponent,
+        AdminComponent,
+        PixelComponent
+    ],
     imports: [
         BrowserModule,
         RouterModule,
@@ -36,7 +36,10 @@ import { PixelComponent } from './pixel/pixel.component';
         ReactiveFormsModule,
         HttpClientModule,
     ],
-  providers: [],
-  bootstrap: [AppComponent]
+    providers: [],
+    exports: [
+        AdminComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

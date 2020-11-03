@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
 
-app-sidenav,
-app-contact,
-app-savoir-faire {
+* {
   font-family: 'Epilogue';
 }
 
@@ -20,3 +18,20 @@ app-savoir-faire {
 #nav a:hover {
   background-size: 100% 100%;
 }
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  background: white;
+  margin: 0 auto;
+  width: 100px;
+  outline: none;
+  border: 1px solid black;
+}
+
+button:hover, button:active {
+  background: yellow;
+  outline: none;
+}
+

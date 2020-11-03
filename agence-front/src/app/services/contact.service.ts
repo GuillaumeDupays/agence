@@ -16,7 +16,7 @@ export class ContactService {
   }
 
   getMessageContact() {
-    return this.http.get('http://admin.blob-zone.com/api/v1/msg-contacts');
+    return this.http.get('http://localhost:3000/api/v1/msg-contacts');
   }
 
   deleteMsgById(id: string) {
