@@ -3,8 +3,10 @@ import {Tag} from './tag';
 
 export interface Article {
   _id?: string;
+  dateCreation: string;
   titre: string;
   // auteur: Auteur;
-  dateCreation: string;
   descriptif: string;
+  texte: string;
+  image: string;
 }

@@ -10,8 +10,8 @@
   <div class="mini-block" *ngFor="let articleL of articleList">
     <h5>{{articleL.dateCreation}}</h5>
     <h4>{{articleL.titre}}</h4>
+    <img [src]="articleL.image" style="width: 300px">
     <h5>Auteur</h5>
-    <p>{{articleL.descriptif}}
-    </p>
+    <p>{{articleL.descriptif}}</p>
   </div>
 </div>
