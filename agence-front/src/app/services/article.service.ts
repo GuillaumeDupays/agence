@@ -18,7 +18,7 @@ export class ArticleService {
   }
 
   uploadImage(formData: FormData) {
-    return this.http.post<any[]>('http://localhost:3000/api/v1/articles/images', formData);
+    return this.http.post<any>('http://localhost:3000/api/v1/articles/images', formData);
   }
 
   postTag(tag: string) {
