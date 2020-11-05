@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
-  imagePath: 'http://admin.blob-zone.com/'
+  production: false,
+  // imagePath: 'http://admin.blob-zone.com/'
 };

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ArticleService} from '../../services/article.service';
 import {environment} from '../../../environments/environment';
+// import {environment} from '../../../environments/environment.prod';
 
 @Component({
   selector: 'app-article-list',
@@ -8,7 +9,7 @@ import {environment} from '../../../environments/environment';
   styleUrls: ['./article-list.component.scss']
 })
 export class ArticleListComponent implements OnInit {
-  articleList;
+  articles;
   imagePath = environment.imagePath;
 
   constructor( private articleService: ArticleService) { }
@@ -18,10 +19,9 @@ export class ArticleListComponent implements OnInit {
   }
 
   getArticles() {
-    this.articleService
-      .getArticles()
+    this.articleService.getArticles()
       .subscribe(data => {
-        this.articleList = data;
+        this.articles = data;
       } );
   }
 }

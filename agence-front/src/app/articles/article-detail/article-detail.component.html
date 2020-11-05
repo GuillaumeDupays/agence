@@ -1,1 +1,9 @@
-<p>article-detail works!</p>
+
+<div class="container">
+  <div *ngIf="(articles$|async) as article" class="mini-block">
+    <h3>{{article.titre}}</h3>
+    <p>{{article.texte}}</p>
+  </div>
+</div>
+
+
