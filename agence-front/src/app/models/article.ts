@@ -5,8 +5,8 @@ export interface Article {
   _id?: string;
   dateCreation: string;
   titre: string;
-  // auteur: Auteur;
-  descriptif: string;
+  auteur: Auteur;
+  presentation: string;
   texte: string;
   image: string;
 }

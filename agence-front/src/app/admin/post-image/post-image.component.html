@@ -1,0 +1,8 @@
+<h3>Poster les images du site</h3>
+<form [formGroup]="form" (ngSubmit)="post()">
+  <input formControlName="nomImage" placeholder="nom de l'image" type="text">
+  <input formControlName="image" id="image" name="image" type="file">
+
+  <button type="button" (click)="addImage()">Ajouter l'image</button>
+  <button type="submit">Enregistrer</button>
+</form>

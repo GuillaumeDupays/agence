@@ -1,0 +1,30 @@
+<div class="mini-block">
+  <h3>Liste des articles</h3>
+</div>
+<div class="mini-block" id="view-articles">
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>auteur</th>
+      <th>titre</th>
+      <th>dateCreation</th>
+      <th>description</th>
+      <th>texte</th>
+      <th>image</th>
+    </tr>
+    <tr *ngFor="let a of articles" >
+      <!--      <td>{{msg._id}}</td>-->
+      <td>{{a._id}}</td>
+      <td>{{a.auteur}}</td>
+      <td>{{a.titre}}</td>
+      <td>{{a.dateCreation}}</td>
+      <td>{{a.presentation}}</td>
+      <td>{{a.texte}}</td>
+      <td>{{a.image}}</td>
+      <td><button (click)="deleteArticle(a._id)">Supprimer</button></td>
+    </tr>
+  </table>
+  <!--    <div class="mini-block">
+        <h3>ADMIN MESSAGES CONTACT</h3>
+      </div>-->
+</div>

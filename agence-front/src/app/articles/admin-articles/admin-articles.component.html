@@ -1,56 +1,14 @@
-
-<form [formGroup]="form" (ngSubmit)="post()" class="container">
-  <div class="mini-block">
-    <h3>ARTICLES</h3>
-  </div>
-  <div class="mini-block">
-   <!-- <h4>Descriptif de la page</h4>
-    <textarea rows="3"></textarea>-->
-    <h4>Intitulé de l'article</h4>
-    <textarea rows="1" formControlName="titre"></textarea>
-    <h5>Auteur</h5>
-    <textarea rows="1"></textarea>
-    <h4>Descriptif de l'article</h4>
-    <textarea rows="4" formControlName="descriptif"></textarea>
-    <h4>Texte</h4>
-    <textarea rows="4" formControlName="texte"></textarea>
-    <h4>Image</h4>
-    <input type="file" formControlName="image" id="image" name="image">
-    <!--<h4>Tag</h4>
-    <textarea rows="1" formControlName="tag"></textarea>-->
-  </div>
-  <button type="button" (click)="upload()">Upload image</button>
-  <button type="submit">Poster l'article</button>
-</form><br><br>
-<div class="container">
-  <div class="mini-block">
-    <h3>ADMIN ARTICLES</h3>
-  </div>
-  <div class="mini-block" id="view-articles">
-    <table>
-      <tr>
-        <th>Id</th>
-        <th>titre</th>
-        <th>dateCreation</th>
-        <th>descriptif</th>
-        <th>texte</th>
-        <th>image</th>
-      </tr>
-      <tr *ngFor="let a of articles" >
-        <!--      <td>{{msg._id}}</td>-->
-        <td>{{a._id}}</td>
-        <td>{{a.titre}}</td>
-        <td>{{a.dateCreation}}</td>
-        <td>{{a.descriptif}}</td>
-        <td>{{a.texte}}</td>
-        <td>{{a.image}}</td>
-        <td><button (click)="deleteArticle(a._id)">Supprimer</button></td>
-      </tr>
-    </table>
-<!--    <div class="mini-block">
-      <h3>ADMIN MESSAGES CONTACT</h3>
-    </div>-->
+<!--<div class="mini-block">
+  <button (click)=toggleDisplay() [hidden]="isShow">Gestion des articles</button>
+  <button (click)="toggleDisplay()" [hidden]="!isShow">Editer un article</button>
+  <app-edit-article [hidden]="isShow"></app-edit-article>
+</div>-->
+<div class="mini-block">
+  <button (click)="toggleDisplay()" [hidden]="isShow">Liste des articles</button>
+  <button (click)="toggleDisplay()" [hidden]="!isShow">Editer un article</button>
 </div>
 
-
+<div class="container">
+  <app-admin-article-list [hidden]="!isShow"></app-admin-article-list>
+  <app-edit-article [hidden]="isShow"></app-edit-article>
 </div>

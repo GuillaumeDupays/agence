@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="post()" class="container">
+  <div class="mini-block">
+    <h3>Edition d'un article</h3>
+  </div>
+  <div class="mini-block">
+    <h4>Intitulé</h4>
+    <textarea formControlName="titre" rows="1"></textarea>
+    <h5>Auteur</h5>
+    <input formControlName="auteur" placeholder="nom de l'auteur">
+    <h4>Description</h4>
+    <textarea formControlName="presentation" rows="4"></textarea>
+    <h4>Texte</h4>
+    <textarea formControlName="texte" rows="4"></textarea>
+    <h4>Image</h4>
+    <input type="file" formControlName="image" id="image" name="image">
+    <!--<h4>Tag</h4>
+    <textarea rows="1" formControlName="tag"></textarea>-->
+  </div>
+  <button type="button" (click)="upload()">Ajouter l'image</button>
+  <div class="mini-block">
+    <button type="submit" id="poster">Poster l'article</button>
+  </div>
+</form><br><br>

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import {RouterModule} from '@angular/router';
@@ -15,6 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { BioComponent } from './bio/bio.component';
 import { AdminComponent } from './admin/admin.component';
 import { PixelComponent } from './pixel/pixel.component';
+import { PostImageComponent } from './admin/post-image/post-image.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +29,8 @@ import { PixelComponent } from './pixel/pixel.component';
         BurgerComponent,
         BioComponent,
         AdminComponent,
-        PixelComponent
+        PixelComponent,
+        PostImageComponent,
     ],
     imports: [
         BrowserModule,
@@ -35,11 +38,13 @@ import { PixelComponent } from './pixel/pixel.component';
         AppRoutingModule,
         ReactiveFormsModule,
         HttpClientModule,
+
     ],
     providers: [],
-    exports: [
-        AdminComponent
-    ],
+  exports: [
+    AdminComponent,
+    BioComponent
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
