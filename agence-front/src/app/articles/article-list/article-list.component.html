@@ -7,12 +7,14 @@
       j'aime bien pouvoir le partager sous forme d'articles
     </p>
   </div>
+  <div class="mini-block">
+    <p>Vous pouvez <a routerLink="/admin"><strong>ajouter un article</strong> </a> sur le site si vous voulez, c'est fait pour jusqu'à ce que je mettre en place un accès sécurisé, alors profitez-en.</p>
+  </div>
   <div class="mini-block" *ngFor="let article of articles">
     <a [routerLink]="[ article._id ]">
       <h5>{{article.dateCreation}}</h5>
       <h4>{{article.titre}}</h4>
       <img [src]="imagePath + article.image" style="max-width: 100%">
-      <h5>Auteur</h5>
       <p>{{article.presentation}}</p>
     </a>
   </div>

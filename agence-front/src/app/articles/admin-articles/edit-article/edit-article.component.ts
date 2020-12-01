@@ -22,9 +22,20 @@ export class EditArticleComponent implements OnInit {
     this.form = this.fb.group({
       titre: '',
       presentation: '',
-      texte: '',
       image: '',
-      auteur: ''
+      auteur: '',
+      paragraphes: this.fb.group({
+        titreP1: '',
+        p1: '',
+        titreP2: '',
+        p2: '',
+        titreP3: '',
+        p3: '',
+        titreP4: '',
+        p4: '',
+        titreP5: '',
+        p5: ''
+      })
       // nomAuteur: ''
     });
   }

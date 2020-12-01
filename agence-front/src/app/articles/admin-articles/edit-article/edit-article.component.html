@@ -9,8 +9,19 @@
     <input formControlName="auteur" placeholder="nom de l'auteur">
     <h4>Description</h4>
     <textarea formControlName="presentation" rows="4"></textarea>
-    <h4>Texte</h4>
-    <textarea formControlName="texte" rows="4"></textarea>
+    <h4>Paragraphes</h4>
+    <div formGroupName="paragraphes">
+      <input formControlName="titreP1" placeholder="titre du paragraphe 1">
+      <textarea rows="3" formControlName="p1" placeholder="paragraphe 1"></textarea>
+      <input formControlName="titreP2" placeholder="titre du paragraphe 2">
+      <textarea rows="3" formControlName="p2" placeholder="paragraphe 2"></textarea>
+      <input formControlName="titreP3" placeholder="titre du paragraphe 3">
+      <textarea rows="3" formControlName="p3" placeholder="paragraphe 3"></textarea>
+      <input formControlName="titreP4" placeholder="titre du paragraphe 4">
+      <textarea rows="3" formControlName="p4" placeholder="paragraphe 4"></textarea>
+      <input formControlName="titreP5" placeholder="titre du paragraphe 5">
+      <textarea rows="3" formControlName="p5" placeholder="paragraphe 5"></textarea>
+    </div>
     <h4>Image</h4>
     <input type="file" formControlName="image" id="image" name="image">
     <!--<h4>Tag</h4>

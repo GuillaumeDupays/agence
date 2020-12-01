@@ -2,7 +2,11 @@
 <div class="container">
   <div *ngIf="(articles$|async) as article" class="mini-block">
     <h3>{{article.titre}}</h3>
-    <p>{{article.texte}}</p>
+    <p>{{article.paragraphes.p1}}</p>
+    <p>{{article.paragraphes.p2}}</p>
+    <p>{{article.paragraphes.p3}}</p>
+    <p>{{article.paragraphes.p4}}</p>
+    <p>{{article.paragraphes.p5}}</p>
   </div>
 </div>
 
